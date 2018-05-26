@@ -1,10 +1,8 @@
-import 'babel-polyfill';
 import express from 'express';
-
-import test from './routers/test';
+import { router as hello } from './routers/hello';
 
 const app = express();
 
-app.use('/v1/test', test);
+app.use('/api/hello', hello);
 
-app.listen(8081);
+app.listen(3003);

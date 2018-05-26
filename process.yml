@@ -1,4 +1,0 @@
-apps:
-  - script: './dist/app.js'
-    name: 'test-api'
-    instances: 1
