@@ -1,3 +1,4 @@
+import 'babel-polyfill';
 import express from 'express';
 import { router as hello } from './routers/hello';
 
