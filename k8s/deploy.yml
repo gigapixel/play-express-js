@@ -9,19 +9,20 @@ spec:
   imagePullSecrets:
   - name: cbmdevacr-secret
 
-# --
-# apiVersion: v1
-# kind: Service
-# metadata:
-#   name: pix-api
-# spec:
-#   type: ClusterIP
-#   ports:
-#   - name: http
-#     port: 80
-#     targetPort: 3003
-#     protocol: TCP
-# --
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: pix-api
+spec:
+  type: ClusterIP
+  ports:
+  - name: http
+    port: 80
+    targetPort: 3003
+    protocol: TCP
+
+# ---
 # apiVersion: extensions/v1beta1
 # kind: Ingress
 # metadata:
