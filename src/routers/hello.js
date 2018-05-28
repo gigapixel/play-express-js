@@ -4,5 +4,5 @@ export const router = new Router();
 router.get('/', hello);
 
 async function hello(req, res) {
-  res.json({ message: 'hello express test 555' });
+  res.status(200).json({ message: 'hello express on k8s' });
 }
