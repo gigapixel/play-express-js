@@ -21,26 +21,3 @@ spec:
     port: 80
     targetPort: 3003
     protocol: TCP
-
-# ---
-# apiVersion: extensions/v1beta1
-# kind: Ingress
-# metadata:
-#   name: pix-api-ingress
-#   annotations:
-#     kubernetes.io/tls-acme: "true"
-#     certmanager.k8s.io/issuer: letsencrypt-auto
-#     nginx.ingress.kubernetes.io/rewrite-target: /
-# spec:
-#   tls:
-#   - hosts:
-#     - pix-api.alphaem-dev.com
-#     secretName: tls-secret
-#   rules:
-#   - host: pix-api.alphaem-dev.com
-#     http:
-#       paths:
-#       - path: /
-#         backend:
-#           serviceName: pix-api
-#           servicePort: 80
