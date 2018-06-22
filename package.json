@@ -4,6 +4,7 @@
   "author": "Peerapat S.",
   "license": "MIT",
   "dependencies": {
+    "bugsnag": "^2.4.0",
     "express": "^4.16.0"
   },
   "devDependencies": {
