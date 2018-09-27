@@ -28,7 +28,7 @@ app.get('/api/version', (req, res, next) => {
 // });
 
 app.use('/api/error', (req, res, next) => {
-  next(new Error('Test custom error'));
+  next(new Error('Test custom error 555'));
 });
 
 // app.use(bugsnag.errorHandler)
